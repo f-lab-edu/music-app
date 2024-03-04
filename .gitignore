@@ -53,3 +53,8 @@ next-env.d.ts
 !.yarn/sdks
 !.yarn/versions
 .pnp.*
+
+.env
+.env.local
+
+app/api/server/generated
