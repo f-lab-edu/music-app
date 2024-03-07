@@ -58,3 +58,7 @@ next-env.d.ts
 .env.local
 
 app/api/server/generated
+
+# prisma build files 
+prisma/*
+!prisma/schema.prisma
