@@ -2,7 +2,12 @@ import type { Metadata } from 'next'
 import { Inter, Montserrat } from 'next/font/google'
 import './globals.css'
 import AuthProvider from './api/auth/provider'
-const inter = Montserrat({ subsets: ['latin'] })
+const montserrat = Montserrat({
+  weight: ['400', '700'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  display: 'swap'
+})
 import Header from '@/components/Common/Header'
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -12,10 +17,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" data-theme="winter">
-      <body className={inter.className}>
+      <body className={montserrat.className} suppressHydrationWarning={true}>
         <Header />
         <AuthProvider>
-          <main className="p-5">{children}</main>
+          <main className="h-screen">{children}</main>
         </AuthProvider>
       </body>
     </html>
