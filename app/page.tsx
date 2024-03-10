@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen w-full flex-col items-center content-center p-16">
+    <main className="flex min-h-screen w-full flex-col items-center content-center p-10">
       <div className="flex flex-row">
         <div className="flex m-3 items-center align-center">
           <Image src="./sound_icon.svg" alt="BeMusician_icon" width={300} height={300} />
