@@ -1,6 +1,7 @@
 'use client'
 import { useSession, signIn, signOut } from 'next-auth/react'
 import { useState, useRef } from 'react'
+import Loading from '@/components/Common/Loading'
 export default function SignUpInput() {
   const { data: session, status } = useSession()
   const emailRef = useRef<HTMLInputElement>(null)
@@ -39,7 +40,7 @@ export default function SignUpInput() {
     return (
       <>
         <div className="w-full">
-          <p className="text-center">...Loading</p>
+          <Loading />
         </div>
       </>
     )
