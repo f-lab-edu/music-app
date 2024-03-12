@@ -18,8 +18,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" data-theme="winter">
       <body className={montserrat.className} suppressHydrationWarning={true}>
-        <Header />
         <AuthProvider>
+          <Header />
           <main className="h-screen">{children}</main>
         </AuthProvider>
       </body>
