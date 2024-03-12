@@ -2,7 +2,7 @@
 import { useSession, signIn, signOut } from 'next-auth/react'
 import Image from 'next/image'
 // import { useRouter } from 'next/router'
-import { Loading } from '@/components/Common/Loading'
+import Loading from '@/components/Common/Loading'
 export default function SignInInput() {
   const { data: session, status } = useSession()
   // const router = useRouter()
